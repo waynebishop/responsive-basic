@@ -1,5 +1,74 @@
-/*body {
-	background-color: red; 
-}	*/
+nav {
+	background-color: #333333;
+	max-width: 1000px;
+	margin: 0 auto;
+}
 
-/*Comment goes here*/
+nav ul {
+	display: none;
+}
+
+#hamburger {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 480px) {
+
+	nav ul {
+		display: block;
+		text-align:  right;
+	}
+
+	#hamburger {
+		display: none;
+	}
+
+	nav img:not(#hamburger) {
+		float: left;
+	}
+
+	nav li {
+		display: inline-block;
+		line-height: 50px;
+		margin: 0 10px;
+
+	}
+
+	nav li a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
