@@ -27,13 +27,20 @@ main {
 	margin: 0 auto;
 }
 
+.latest img {
+	margin: 0 auto;
+	display: block;
+}
 
 
 
 
 
 
-/* min with 480px*/
+
+
+
+/* min with 480px - for nav*/
 
 @media all and (min-width: 480px) {
 
@@ -64,6 +71,25 @@ main {
 
 }
 
+/* Min width 550px for latest*/
+
+@media all and (min-width: 550px) {
+
+	.latest img {
+		float: left;
+		margin-right: 10px;
+	}
+
+
+	.latest {
+		margin-bottom: 40px;
+	}
+	.latest:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
 
 
 /* Min width 700px */
