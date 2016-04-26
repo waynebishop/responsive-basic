@@ -25,16 +25,13 @@ img {
 main {
 	max-width: 1000px;
 	margin: 0 auto;
+	background-color: red;
 }
 
 .latest img {
 	margin: 0 auto;
 	display: block;
 }
-
-
-
-
 
 
 
@@ -117,7 +114,44 @@ main {
 
 
 
+@media all and (min-width: 680px) {
+	.latest {
+		width: 50%;
+		float: left;
+	}
 
+	.latest p {
+		padding-right: 10px;
+	}
+
+	main:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+}
+
+
+
+@media all and (min-width: 980px) {
+	.latest {
+		width: 33.3%;
+	}
+
+	.latest img {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.latest h1,
+	.latest p,
+	#featured img  {
+		padding-left: 7px;
+	}
+
+
+}
 
 
 
